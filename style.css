@@ -1,0 +1,240 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* GLOBAL CSS START
+====================*/
+
+:root {
+
+  /* Global colors  */
+  --Dark_brown: #5D3E31;
+  --Disabled_brown: #A39088;
+  --Sec_brown: #7D5C4E;
+  /*paragraph text color*/
+  --Grey800: #49454F;
+  --Grey600: #656363;
+  --Grey400: #666666;
+  --Grey200: #1D1B20;
+  --Grey100: #F0F0F0;
+  --NeroWhite: #ffffff;
+
+  /* Border colors  */
+  --Rose-Fog: #E1BFB0;
+  --Light_Rose_Fog: #E1BFB0;
+  --Light_Rose_Fog: #E1BFB0;
+
+
+  /* font-weight */
+  --thin: 100;
+  --extra-light: 200;
+  --light: 300;
+  --regular: 400;
+  --medium: 500;
+  --semi-bold: 400;
+  --bold: 700;
+  --extra-bold: 800;
+
+  /* heading font class and color */
+  --h1-font-size: 56px;
+  --h1-line-height: 70px;
+  --all-headings-font-size: 48px;
+  --all-headings-line-height: 60px;
+  --heading-color: #352B26;
+  /* background color */
+  --cont-bg-sec-color: #FDF8F7;
+  --black: #000000;
+
+
+
+  /* 1920px paragraph font-size,line-height */
+  --xl-para-1-f: 24px;
+  --xl-para-1-lh: 30px;
+  --xl-para-1-l-spacing: .48px;
+
+  /* 18px font size */
+  --xl-para-2-f: 18px;
+  --xl-para-2-lh: 22.5px;
+  --xl-para-2-l-spacing: .36px;
+
+
+}
+
+/* headings */
+.h-h-para-head .h1-heading {
+  font-size: var(--h1-font-size);
+  font-weight: var(--bold);
+  line-height: var(--h1-line-height);
+  color: var(--heading-color);
+}
+
+.all-headings{
+  font-size: var(--all-headings-font-size);
+  font-weight: var(--bold);
+  line-height: var(--all-headings-line-height);
+  color: var(--heading-color);
+}
+
+/* paragraph */
+.h-h-para-head .xlarge-p {
+  font-size: var(--xl-para-1-f);
+  font-weight: var(--regular);
+  line-height: var(--xl-para-1-lh);
+  letter-spacing: var(--xl-para-1-l-spacing);
+  color: var(--Sec_brown);
+}
+
+/* 18px font size */
+.xlarge-p-2 {
+  font-size: var(--xl-para-2-f);
+  font-weight: var(--regular);
+  line-height: var(--xl-para-2-lh);
+  letter-spacing: var(--xl-para-1-l-spacing);
+  color: var(--Sec_brown);
+}
+
+/* GLOBAL CSS END
+===================*/
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px;
+
+}
+
+.main-container .xl-width {
+  width: 1280px;
+}
+
+
+
+/* buttons design */
+.xl-button{
+  width: auto;
+  height: auto;
+  padding: 48px 0;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.xl-button a{
+  padding: 21.5px 138.5px;
+  width: 432px;
+  background: linear-gradient(90deg, #5D3E31 0%, #704B3B 24%, #855946 50%, #7D5C4E 100%);
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 5px;
+}
+
+
+/* Header section
+================== */
+.home-header-section{
+  background-color: var(--NeroWhite);
+}
+
+.home-h-inner-sec{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.h-h-para-head{
+  width: 80%;
+}
+
+.h-h-para-head .header-heading{
+  margin-bottom: 24px;
+}
+
+
+/* three icons */
+.h-header-icon-text-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 20px;
+}
+
+.h-header-icon-text{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  white-space: nowrap;
+  row-gap: 10px;
+}
+
+/* .h-header-icon-text .h-icon-t{
+   
+} */
+
+/* How it works ?
+=================== */
+.how-it-works-sec{
+  background-color: var(--cont-bg-sec-color);
+}
+
+.how-it-works-inner-sec{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 64px;
+}
+
+.how-it-works-cards-cnt{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: auto;
+  gap: 20px;
+}
+
+.h-it-w-card{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.h-it-w-card-details .h-w-c-num{
+  position: absolute;
+  top: -35px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.h-it-w-card-details{
+ position: relative;
+ background-color: var(--NeroWhite);
+ padding: 40px 24px 12.5px;
+ border-radius: 30px;
+ display: flex;
+ justify-content: start;
+ align-items: center;
+ flex-direction: column;
+ height: 334px;
+ margin-top: -40px;
+}
+
+.h-w-c-title .h-w-c-title-text{
+  color: var(--heading-color);
+  font-size: 28px;
+  line-height: 35px;
+  font-weight: var(--semi-bold);
+  padding-bottom: 12px;
+}
+
+.h-w-c-paragraph .h-w-c-inner-para{
+  margin-bottom: 20px;
+}
+
+
+
+

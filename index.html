@@ -1,177 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Link Swiper's CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <!-- Link bootstrap CSS -->
-    <link href="./css/bootstrap-5.3.3-dist/css/bootstrap.css" rel="stylesheet">
-    <!-- Link main css file -->
-    <link rel="stylesheet" href="./css/style.css" />
-    <title>BFF</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BFF</title>
+  <!-- Link css file -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="breakpoint.css">
+  <link rel="stylesheet" href="nav.css">
 </head>
 <body>
-  <!-- navbar section -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid" >
-          <a class="navbar-brand" href="#">BRUNSWICK FUR FOOD
-            <span class="web-logo-small-text">As food should be</span>
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-           <div class="collapse navbar-collapse" id="navbarSupportedContent"> 
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li> 
-            </ul>
-          </div>
+  <!-- Navbar section  -->
+   <div class="nav-container main-container">
+    <nav class="navbar xl-width">
+      <div class="logo">
+        <span class="logo-cap">BRUNSWICK FUR FOOD</span>
+        <span class="logo-sm">As food should be</span>
+      </div>
+      <div class="nav-links">
+        <ul>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Bowl Plans</a> </li>
+          <li><a href="#">Give it a Go</a></li>
+          <li><a href="#">Read</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div class="nav-login-btn">
+        <a href="#">Login</a>
+      </div>
+      <div class="nav-cart-img">
+        <a href="#">
+          <img src="./bff-images/nav-cart-icon.png" alt="">
+        </a>
+      </div>
+    </nav>
+   </div>
+   <!-- How it works ?  section-->
+   <div class="home-header-section main-container">
+    <div class="home-h-inner-sec xl-width">
+      <div class="home-header-sec-material">
+        <div class="h-h-para-head">
+          <h1 class="header-heading h1-heading">Melbourne’s<br> Finest Pet Meals</h1>
+          <p class="xlarge-p">
+            At BFF we offer premium pet meals made with love and good quality human grade ingredients. Order online and give your pets the nourishment they deserve.
+          </p>
         </div>
-      </nav> 
-      <div class="container">
-        <div class="row home-header-sec">
-          <div class="col-xxxl-8 col-md-6">
-            <div class="row">
-              <h1>Melbourne’s Finest Pet Meals</h1>
-              <p>
-                At BFF we offer premium pet meals made with love and good quality human grade ingredients. Order online and give your pets the nourishment they deserve.
-              </p>
-            </div>
-            <div class="row">
-              <button class="btn btn-primary button-web w-60">Try our Starter Pack</button>
-            </div>
-            <div class="row">
-              <div class="col-4 text-center ">
-                <img src="./bff-images/h-sm-c1.png" alt="Human Grade Ingredients" >
-                <p>Human Grade Ingredients</p>
-              </div>
-              <div class="col-4 text-center">
-                <img src="./bff-images/h-sm-c2.png" alt="No added Preservatives" >
-                <p>No added Preservatives</p>
-              </div>
-              <div class="col-4 text-center">
-                <img src="./bff-images/h-sm-c3.png" alt="Nutritionally Balanced" >
-                <p>Nutritionally Balanced</p>
-              </div>
-            </div>            
+        <div class="xl-button">
+          <a href="#">Try our Starter Pack</a>
+        </div>
+        <div class="h-header-icon-text-container">
+          <div class="h-header-icon-text">
+            <img src="./bff-images/h-sm-c1.png" alt="">
+            <p class="h-icon-t">Human Grade Ingredients</p>
           </div>
-          <div class="col-xxxl-4 col-md-6 d-flex justify-content-center">
-            <img  src="./bff-images/home-header-image.png" alt="">
+          <div class="h-header-icon-text">
+            <img src="./bff-images/h-sm-c2.png" alt="">
+            <p class="h-icon-t">No added Preservatives</p>
+          </div>
+          <div class="h-header-icon-text">
+            <img src="./bff-images/h-sm-c3.png" alt="">
+            <p class="h-icon-t">Nutritionally Balanced</p>
           </div>
         </div>
       </div>
-      <!-- How it works ? section start -->
-      <div class="container">
-        <div class="container mb-5 ">
-          <div class="swiper mySwiper " >
-              <div class="swiper-wrapper">
-                <div class="swiper-slide how-it-works-cards">
-                   <div class="how-it-works-card-inner">
-                      <div class="h-w-img">
-                          <img src="./bff-images/Rectanglecard.png" alt="" srcset="">
-                      </div>
-                      <div class="h-w-seria-par rounded">
-                          <p>01</p>
-                          <p>Choose Meal Bowl </p>
-                          <p>Browse through our selection of nutritious and delicious pet meals. Once you've made your
-                              selection, simply add to cart and proceed to continue. </p>
-                          <p>Don't forget to enter the promo code "BFF10" to get 10% off for a limited time only.</p>
-                      </div>
-                   </div>
-                </div> 
-                <div class="swiper-slide how-it-works-cards">
-                  <div class="how-it-works-card-inner">
-                     <div class="h-w-img">
-                         <img src="./bff-images/Rectanglecard.png" alt="" srcset="">
-                     </div>
-                     <div class="h-w-seria-par rounded">
-                         <p>01</p>
-                         <p>Choose Meal Bowl </p>
-                         <p>Browse through our selection of nutritious and delicious pet meals. Once you've made your
-                             selection, simply add to cart and proceed to continue. </p>
-                         <p>Don't forget to enter the promo code "BFF10" to get 10% off for a limited time only.</p>
-                     </div>
-                  </div>
-               </div> 
-               <div class="swiper-slide how-it-works-cards">
-                  <div class="how-it-works-card-inner">
-                     <div class="h-w-img">
-                         <img src="./bff-images/Rectanglecard.png" alt="" srcset="">
-                     </div>
-                     <div class="h-w-seria-par rounded">
-                         <p>01</p>
-                         <p>Choose Meal Bowl </p>
-                         <p>Browse through our selection of nutritious and delicious pet meals. Once you've made your
-                             selection, simply add to cart and proceed to continue. </p>
-                         <p>Don't forget to enter the promo code "BFF10" to get 10% off for a limited time only.</p>
-                     </div>
-                  </div>
-               </div> 
-               <div class="swiper-slide how-it-works-cards">
-                  <div class="how-it-works-card-inner">
-                     <div class="h-w-img">
-                         <img src="./bff-images/Rectanglecard.png" alt="" srcset="">
-                     </div>
-                     <div class="h-w-seria-par rounded">
-                         <p>01</p>
-                         <p>Choose Meal Bowl </p>
-                         <p>Browse through our selection of nutritious and delicious pet meals. Once you've made your
-                             selection, simply add to cart and proceed to continue. </p>
-                         <p>Don't forget to enter the promo code "BFF10" to get 10% off for a limited time only.</p>
-                     </div>
-                  </div>
-               </div> 
-               <div class="swiper-slide how-it-works-cards">
-                  <div class="how-it-works-card-inner">
-                     <div class="h-w-img">
-                         <img src="./bff-images/Rectanglecard.png" alt="" srcset="">
-                     </div>
-                     <div class="h-w-seria-par rounded">
-                         <p>01</p>
-                         <p>Choose Meal Bowl </p>
-                         <p>Browse through our selection of nutritious and delicious pet meals. Once you've made your
-                             selection, simply add to cart and proceed to continue. </p>
-                         <p>Don't forget to enter the promo code "BFF10" to get 10% off for a limited time only.</p>
-                     </div>
-                  </div>
-               </div> 
-              </div>
-              <div class="swiper-button-next five-cards-arrow-next"></div>
-              <div class="swiper-button-prev five-cards-arrow-prev"></div>
-              <div class="swiper-pagination"></div>
+      <div class="home-header-image">
+        <img src="./bff-images/home-header-image.png" alt="">
+      </div>
+    </div>
+   </div>
+   <!-- How it works ? section  -->
+   <div class="how-it-works-sec main-container">
+    <div class="how-it-works-inner-sec xl-width">
+      <div class="how-it-works">
+        <h2 class="all-headings">How it works ?</h2>
+      </div>
+      <div class="how-it-works-cards-cnt">
+        <div class="h-it-w-card">
+          <div class="h-w-c-img">
+            <img src="./bff-images/home-cards-image.png" alt="">
+          </div>
+          <div class="h-it-w-card-details">
+            <div class="h-w-c-num">
+              <img src="./bff-images/Group114.png" alt="" srcset="">
             </div>
+            <div class="h-w-c-title">
+              <p class="h-w-c-title-text">Choose Meal Bowl</p>
+            </div>
+            <div class="h-w-c-paragraph">
+              <p class="h-w-c-inner-para xlarge-p-2">Browse through our selection of nutritious and delicious pet meals. Once you've made your
+                selection, simply add to cart and proceed to continue. </p>
+              <p class="xlarge-p-2">Don't forget to enter the promo code "BFF10" to get 10% off for a limited time only.</p>
+            </div>
+          </div>
+        </div>
+        <div class="h-it-w-card">
+          <div class="h-w-c-img">
+            <img src="./bff-images/home-cards-image.png" alt="">
+          </div>
+          <div class="h-it-w-card-details">
+            <div class="h-w-c-num">
+              <img src="./bff-images/Group115.png" alt="" srcset="">
+            </div>
+            <div class="h-w-c-title">
+              <p class="h-w-c-title-text">Frequency</p>
+            </div>
+            <div class="h-w-c-paragraph">
+              <p class="h-w-c-inner-para xlarge-p-2">You can choose either: One time Delivery or Setting up a Subscription</p>
+              <p class="xlarge-p-2">Subscription can be fortnightly or monthly depending upon your furry baby's requirements.</p>
+            </div>
+          </div>
+        </div>
+        <div class="h-it-w-card">
+          <div class="h-w-c-img">
+            <img src="./bff-images/home-cards-image.png" alt="">
+          </div>
+          <div class="h-it-w-card-details">
+            <div class="h-w-c-num">
+              <img src="./bff-images/Group114.png" alt="" srcset="">
+            </div>
+            <div class="h-w-c-title">
+              <p class="h-w-c-title-text">Choose Meal Bowl</p>
+            </div>
+            <div class="h-w-c-paragraph">
+              <p class="h-w-c-inner-para xlarge-p-2">Browse through our selection of nutritious and delicious pet meals. Once you've made your
+                selection, simply add to cart and proceed to continue. </p>
+              <p class="xlarge-p-2">Don't forget to enter the promo code "BFF10" to get 10% off for a limited time only.</p>
+            </div>
+          </div>
+        </div>
+        <div class="h-it-w-card">
+          <div class="h-w-c-img">
+            <img src="./bff-images/home-cards-image.png" alt="">
+          </div>
+          <div class="h-it-w-card-details">
+            <div class="h-w-c-num">
+              <img src="./bff-images/Group114.png" alt="" srcset="">
+            </div>
+            <div class="h-w-c-title">
+              <p class="h-w-c-title-text">Choose Meal Bowl</p>
+            </div>
+            <div class="h-w-c-paragraph">
+              <p class="h-w-c-inner-para xlarge-p-2">Browse through our selection of nutritious and delicious pet meals. Once you've made your
+                selection, simply add to cart and proceed to continue. </p>
+              <p class="xlarge-p-2">Don't forget to enter the promo code "BFF10" to get 10% off for a limited time only.</p>
+            </div>
+          </div>
         </div>
       </div>
-      
-      
-      <!-- BootStrap link js bundle file -->
-      <script src="./css/bootstrap-5.3.3-dist/js/bootstrap.bundle.js"></script>
-      
-      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
-      
-      <!-- Swiper JS -->
-      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-      <!-- Link script.js file -->
-      <script src="script.js"></script>
+    </div>
+   </div>
 </body>
-
-
 </html>

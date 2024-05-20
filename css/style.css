@@ -6,6 +6,9 @@
 
 
 /* Font family */
+/* Source Serif 4 */
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap');
+
 @font-face{
   font-family: 'Source Sans Pro';
   src: url(./font-family/source-sans-pro/SourceSansPro-Regular.ttf);
@@ -60,6 +63,10 @@
   --black: #000000;
 
 
+  /* 36px font size */
+  --medium-heading-fs: 36px;
+
+  
 
   /* 24px font size */
   --XLarge-400-fs: 24px;
@@ -106,6 +113,16 @@
   font-family: 'Source Sans Pro', sans-serif;
 }
 
+/* 20px font size */
+.large-400-p{
+  font-size: var(--Large-400-fs);
+  line-height: var(--XLarge-400-lh);
+  letter-spacing: var(--XLarge-400-ls);
+  font-weight: var(--regular);
+  color: var(--Sec_brown);
+}
+
+
 /* paragraph 18px */
 .medium-400 {
   font-size: var(--Medium-400-fs);
@@ -134,10 +151,10 @@
 
 
 /* buttons design */
+
 .xl-button{
   width: auto;
   height: auto;
-  padding: 48px 0;
   display: flex;
   justify-content: start;
   align-items: center;
@@ -173,6 +190,10 @@
 
 .h-h-para-head .header-heading{
   margin-bottom: 24px;
+}
+
+.ho-h-try-o-s-btn{
+  padding: 48px 0;
 }
 
 
@@ -330,14 +351,106 @@
   text-align: center;
 }
 
-.tail-w-ca-title p{
-  font-size: 36px;
+.medium-heading-fs{
+  font-size: var(--medium-heading-fs);
   font-weight: var(--bold);
   line-height: var(--all-headings-line-height);
   color: var(--heading-color);
-  font-family: 'Source Serif Pro',serif;
+  font-family: "Source Serif 4", serif;
 }
 
+/* Give our Starter Pack a go ! section  */
+.starter-pack-inner-sec{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 64px;
+}
 
+.starter-pack-details{
+  width: 85%;
+}
+
+.starter-pack-details .starter-p-det-text{
+  text-align: center;
+}
+
+.starter-pack-details .starter-p-det-text-block{
+  display: block;
+}
+
+.starter-pack-product-chart-sec{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: start;
+  padding-top: 12px;
+}
+
+.starter-pack-chart{
+  width: 432px;
+  row-gap: 31px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.st-pack-ch-title{
+  width: 100%;
+}
+
+.st-pack-ch-title ul{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.st-pack-ch-title ul li{
+  font-size: var(--Medium-400-fs);
+  font-weight: var(--bold);
+  line-height: var(--Medium-400-lh);
+  letter-spacing: var(--Medium-400-ls);
+  color: var(--Sec_brown);
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.st-p-ch-details .st-p-ch-det-text{
+   text-align: center;
+}
+
+.w-choose-us-sec{
+  background-color: var(--cont-bg-sec-color);
+  background-image: url(../bff-images/h-bg-image.png);
+   background-repeat: no-repeat;
+   background-position: center;
+}
+
+.w-choose-us-sec .w-ch-inner-sec{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   row-gap: 64px;
+}
+
+.wh-ch-four-icont-text{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  row-gap: 48px; 
+}
+
+.wh-ch-icont-text{
+  width: 35%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
 
 

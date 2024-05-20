@@ -1,3 +1,5 @@
+@import url(style.css);
+
 .nav-container {
     background-color: var(--Grey100);
     padding: 10px 0px;
@@ -15,6 +17,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    font-family: 'Source Sans Pro';
   }
   
   .navbar .logo .logo-cap {
@@ -29,6 +32,7 @@
     line-height: 17.5px;
     font-weight: 400;
     color: var(--black);
+    font-family: 'Source Sans Pro',sans-serif;
   }
   
   .navbar .nav-links ul {
@@ -47,16 +51,23 @@
   }
   
   .navbar .nav-links ul li a {
+    font-size: var(--Large-400-fs);
+    font-weight: var(--regular);
     text-decoration: none;
     color: black;
     padding: 12px 14px;
     white-space: nowrap;
+    font-family: 'Source Sans Pro', sans-serif;
   }
   
   .nav-login-btn a {
+    font-size: var(--Large-400-fs);
+    font-weight: var(--regular);
+    font-family: 'Source Sans Pro',sans-serif;
     text-decoration: none;
     color: var(--NeroWhite);
     padding: 13px 46px;
     text-decoration: none;
     background: linear-gradient(90deg, #5D3E31 0%, #704B3B 24%, #855946 50%, #7D5C4E 100%);
+    border-radius: 5px;
   }

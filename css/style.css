@@ -4,6 +4,18 @@
   box-sizing: border-box;
 }
 
+
+/* Font family */
+@font-face{
+  font-family: 'Source Sans Pro';
+  src: url(./font-family/source-sans-pro/SourceSansPro-Regular.ttf);
+}
+
+@font-face{
+  font-family: 'Source Serif Pro';
+  src: url(../font-family/source-serif-pro/SourceSerifPro-Bold.ttf);
+}
+
 /* GLOBAL CSS START
 ====================*/
 
@@ -49,15 +61,20 @@
 
 
 
-  /* 1920px paragraph font-size,line-height */
-  --xl-para-1-f: 24px;
-  --xl-para-1-lh: 30px;
-  --xl-para-1-l-spacing: .48px;
+  /* 24px font size */
+  --XLarge-400-fs: 24px;
+  --XLarge-400-lh: 30px;
+  --XLarge-400-ls: 0.48px;
+
+    /* 20px font size */
+  --Large-400-fs: 20px;
+  --Large-400-lh: 25px;
+  --Large-400-ls: 0.4px;
 
   /* 18px font size */
-  --xl-para-2-f: 18px;
-  --xl-para-2-lh: 22.5px;
-  --xl-para-2-l-spacing: .36px;
+  --Medium-400-fs: 18px;
+  --Medium-400-lh: 22.5px;
+  --Medium-400-ls: .36px;
 
 
 }
@@ -68,6 +85,7 @@
   font-weight: var(--bold);
   line-height: var(--h1-line-height);
   color: var(--heading-color);
+  font-family: 'Source Serif Pro',serif;
 }
 
 .all-headings{
@@ -75,24 +93,27 @@
   font-weight: var(--bold);
   line-height: var(--all-headings-line-height);
   color: var(--heading-color);
+  font-family: 'Source Serif Pro',serif;
 }
 
-/* paragraph */
+/* paragraph 24px */
 .h-h-para-head .xlarge-p {
-  font-size: var(--xl-para-1-f);
+  font-size: var(--XLarge-400-fs);
   font-weight: var(--regular);
-  line-height: var(--xl-para-1-lh);
-  letter-spacing: var(--xl-para-1-l-spacing);
+  line-height: var(--XLarge-400-lh);
+  letter-spacing: var(--XLarge-400-ls);
   color: var(--Sec_brown);
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
-/* 18px font size */
-.xlarge-p-2 {
-  font-size: var(--xl-para-2-f);
+/* paragraph 18px */
+.medium-400 {
+  font-size: var(--Medium-400-fs);
   font-weight: var(--regular);
-  line-height: var(--xl-para-2-lh);
-  letter-spacing: var(--xl-para-1-l-spacing);
+  line-height: var(--Medium-400-lh);
+  letter-spacing: var(--Medium-400-ls);
   color: var(--Sec_brown);
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 /* GLOBAL CSS END
@@ -130,6 +151,7 @@
   text-decoration: none;
   text-align: center;
   border-radius: 5px;
+  font-family: 'Source Sans Pro',sans-serif;
 }
 
 
@@ -213,7 +235,7 @@
 .h-it-w-card-details{
  position: relative;
  background-color: var(--NeroWhite);
- padding: 40px 24px 12.5px;
+ padding: 40px 12.5px 24px;
  border-radius: 30px;
  display: flex;
  justify-content: start;
@@ -221,6 +243,7 @@
  flex-direction: column;
  height: 334px;
  margin-top: -40px;
+ box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
 }
 
 .h-w-c-title .h-w-c-title-text{
@@ -229,10 +252,90 @@
   line-height: 35px;
   font-weight: var(--semi-bold);
   padding-bottom: 12px;
+  font-family: 'Source Sans Pro',sans-serif;
 }
 
 .h-w-c-paragraph .h-w-c-inner-para{
   margin-bottom: 20px;
+}
+
+
+/* Our Customers love us ! section 
+================================== */
+
+.our-customer-love-inner-sec{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 64px;
+}
+
+.our-cus-three-icon-text{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.our-cus-love-p-sec{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.our-cus-love-p{
+  width: 60%;
+  text-align: center;
+}
+
+.our-cus-icon-text{
+  text-align: center;
+}
+
+
+/* Tail-waggingly delicious: Our dog food recipe section  */
+.tail-waggingly-sec{
+  background-color: var(--cont-bg-sec-color);
+}
+
+.tail-waggingly-inner-sec{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 64px;
+}
+
+.tail-wa-three-cards{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tail-wagingly-card{
+  width: 320px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.tail-w-ca-det{
+   padding: 13px 20px 0 ;
+}
+
+.tail-w-c-det-text{
+  text-align: center;
+}
+
+.tail-w-ca-title p{
+  font-size: 36px;
+  font-weight: var(--bold);
+  line-height: var(--all-headings-line-height);
+  color: var(--heading-color);
+  font-family: 'Source Serif Pro',serif;
 }
 
 

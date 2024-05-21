@@ -8,6 +8,8 @@
 /* Font family */
 /* Source Serif 4 */
 @import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap');
+/* font-family: "Source Serif 4", serif; */
+
 
 @font-face{
   font-family: 'Source Sans Pro';
@@ -35,6 +37,7 @@
   --Grey200: #1D1B20;
   --Grey100: #F0F0F0;
   --NeroWhite: #ffffff;
+  --TobaccoBrown: #6D4D3F;
 
   /* Border colors  */
   --Rose-Fog: #E1BFB0;
@@ -176,6 +179,7 @@
   font-weight: var(--bold);
   color: var(--black);
   text-decoration: none;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 /* Font size 16px color #7D5C4E */
@@ -186,7 +190,30 @@
   color: var(--Sec_brown);
   line-height: var(--lg-icon-text-lh);
   text-decoration: none;
+  font-family: 'Source Sans Pro', sans-serif;
 } 
+
+/* Font size 16px color #7D5C4E */
+.Small-600-regular{
+  font-size: var(--lg-icon-text-fs);
+  font-weight: var(--regular);
+  letter-spacing: var(--lg-icon-text-ls);
+  color: var(--Sec_brown);
+  line-height: var(--lg-icon-text-lh);
+  text-decoration: none;
+  font-family: 'Source Sans Pro', sans-serif;
+} 
+
+/* Font size 16px color #6D4D3F */
+.small-400-tob-brown{
+  font-size: var(--lg-icon-text-fs);
+  font-weight: var(--regular);
+  letter-spacing: var(--lg-icon-text-ls);
+  color: var(--TobaccoBrown);
+  line-height: var(--lg-icon-text-lh);
+  text-decoration: none;
+  font-family: 'Source Sans Pro', sans-serif;
+}
 
 /* Font size 16px color #49454F */
 .small-400{
@@ -196,6 +223,7 @@
   color: var(--Grey800);
   line-height: var(--lg-icon-text-lh);
   text-decoration: none;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 /* Font size 14px color #49454F */
@@ -205,6 +233,7 @@
   font-weight: var(--regular);
   color: var(--Grey800);
   text-decoration: none;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 /* Font size 14px color #7D5C4E */
@@ -214,6 +243,7 @@
   font-weight: var(--regular);
   color: var(--Sec_brown);
   text-decoration: none;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 
@@ -223,6 +253,15 @@
   line-height: var(--XXLarge-400-lh);
   font-weight: var(--bold);
   color: var(--black);
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* XXLarge-600 semi-bold 28px  color:#656363*/
+.XXLarge-600-brown{
+  font-size: var(--XXLarge-400-fs);
+  line-height: var(--XXLarge-400-lh);
+  font-weight: var(--semi-bold);
+  color: var(--Sec_brown);
   font-family: 'Source Sans Pro', sans-serif;
 }
 
@@ -273,7 +312,7 @@
   align-items: center;
 }
 .xl-button a{
-  padding: 21.5px 138.5px;
+  padding: 21.5px 0;
   width: 432px;
   background: linear-gradient(90deg, #5D3E31 0%, #704B3B 24%, #855946 50%, #7D5C4E 100%);
   color: #fff;
@@ -282,6 +321,25 @@
   text-align: center;
   border-radius: 5px;
   font-family: 'Source Sans Pro',sans-serif;
+  font-size: var(--Medium-400-fs);
+  font-weight: var(--regular);
+  letter-spacing: var(--Medium-400-ls);
+}
+
+/* auto width height keval top-bottom padding add karni hai  */
+.Large-button{
+  width: 100%;
+  height: auto;
+  background: linear-gradient(90deg, #5D3E31 0%, #704B3B 24%, #855946 50%, #7D5C4E 100%);
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 5px;
+  font-family: 'Source Sans Pro',sans-serif;
+  font-size: var(--Medium-400-fs);
+  font-weight: var(--regular);
+  letter-spacing: var(--Medium-400-ls);
 }
 
 
@@ -563,7 +621,166 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
 
+/* Our Bowl Plans section */
+.our-b-plan-inner-sec{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 64px;
+}
+
+.our-bowl-val-text-cnt{
+  width: 53%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+/* reuse code  */
+.big-title-font{
+  font-size: 48px;
+  line-height: 60px;
+  color: var(--TobaccoBrown);
+  font-family: 'Source Serif Pro',serif;
+  font-weight: var(--bold);
+}
+
+.our-bowl-txt-inner-cnt .o-b-sm-t{
+  margin-top: -6px;
+}
+
+.our-bowl-product-card-cont{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.our-bowl-prd{
+  width: 304px;
+  height: 367px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.our-bo-pr-det{
+  width: 100%;
+  padding: 82px 16px 71px;
+  background-color: var(--cont-bg-sec-color);
+  margin-top: -65px;
+  z-index: -1;
+  border-radius: 8px;
+}
+
+.our-bo-pr-title-star{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.gradient-text {
+  font-size: var(--Large-400-fs); 
+  line-height: var(--Large-400-lh);
+  background: linear-gradient(90deg, #5D3E31 0%, #704B3B 24%, #855946 50%, #7D5C4E 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  position: relative;
+  display: inline-block;
+}
+.gradient-text::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 3px; 
+  width: 100%;
+  height: 1px;  
+  background: linear-gradient(90deg, #5D3E31 0%, #704B3B 24%, #855946 50%, #7D5C4E 100%);
+}
+
+
+/* What our Clients say ! section */
+
+.testimonial-sec{
+  background-color: var(--cont-bg-sec-color);
+}
+
+.testimonial-heading{
+  text-align: center;
+}
+
+/* Subscribe to our Email section */
+.subscribe-email-sec{
+  padding: 0;
+}
+
+.subs-email-inner-sec{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 48px;
+  height: 570px;
+  padding-top: 80px;
+
+  /* bg image  */
+  background-image: url(/bff-images/active-campaign-bg-image.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.subscribe-email-form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+}
+
+.subs-email-inp .email-input{
+  color: var(--Grey400);
+  padding: 15px 20px;
+  border-radius: 5px 0 0 5px;
+  border: 1px solid var(--Light_Rose_Fog);
+  outline: none;
+  width: 388px;
+  box-sizing: border-box;
+}
+
+.subs-email-inp .email-input:focus{
+  border: 1px solid var(--Light_Rose_Fog);
+}
+
+.subs-email-btn .subscribe-button{
+  border: none;
+  outline: none;
+  padding: 15px 51px;
+  margin-left: -4px;
+}
+
+
+/* Pet Meal FAQ */
+.pet-meal-faq-sec{
+  background-color: var(--cont-bg-sec-color);
+}
+
+.pet-meal-faq-inner-sec{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 24px;
+}
+
+.pet-meal-faq-det{
+  margin-bottom: 24px;
 }
 
 
@@ -580,8 +797,8 @@
   display: flex;
   justify-content: space-between;
   align-items: start;
-  padding-bottom: 40px;
-  border-bottom: 1px solid rgba(0, 0, 0, .4); 
+  padding:0 56px 40px;
+  border-bottom: 1px solid rgba(0, 0, 0, .26); 
 }
 
 .footer-icon-text-two-sec{
@@ -603,7 +820,6 @@
 .f-logo-sm-lg{
   margin-bottom: 67px;
 }
-
 
 .footer-useful-links-sec{
   padding-top: 14px;
@@ -638,14 +854,13 @@
   border-right: none;
 }
 
-
 /* copy right sec */
 .footer-copy-right-sec{
   width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  padding-top: 40px;
+  padding: 40px 128px 5px 35px;
 }
 
 .footer-facebook-insta-logo{
@@ -658,3 +873,68 @@
 .footer-ins-logo{
   text-decoration: none;
 }
+
+
+/* ============================================ */
+.testimonial-sec{
+  padding: 80px 0px 80px 314px;
+}
+.testimonial-sec .testimonial-inner-sec{
+  width: 100%;
+}
+
+.testimonial-heading{
+  margin-bottom: 59px;
+}
+
+.testimonial-slide-inner-sec{
+  width: 100%;
+  height: 100%;
+  padding-bottom: 40px;
+}
+
+.testimonial-det-inner-sec{
+  background-color: var(--NeroWhite);
+  padding: 48px;
+}
+
+
+.te-ratin-and-right-sig{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.te-author-name{
+  color: var(--heading-color);
+}
+
+.te-author-image-author-name{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  column-gap: 10px;
+  margin-top: 48px;
+}
+
+.te-author-name-time p:last-child{
+  color: var(--heading-color);
+}
+
+.testimonia-pagination{
+  position: absolute;
+  bottom: -100px;
+}
+
+.testimonia-pagination .swiper-pagination-bullet{
+  border: 1px solid var(--Rose-Fog);
+  /* background-color: ; */
+  width: 14px;
+  height: 14px;
+}
+
+.testimonia-pagination .swiper-pagination-bullet-active{
+  background-color: var(--Light_Rose_Fog);
+}
+

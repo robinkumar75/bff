@@ -1,3 +1,13 @@
+// Anchor button
+document.querySelectorAll(".button").forEach((button) => {
+  button.addEventListener("click", function (event) {
+    event.preventDefault();
+    // Your custom code here
+    console.log("Button clicked");
+  });
+});
+
+// testimonial section
 var swiper = new Swiper(".testimonial-slide-inner-sec", {
   slidesPerView: 2.5,
   spaceBetween: 30,

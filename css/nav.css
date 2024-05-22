@@ -1,5 +1,6 @@
 @import url(style.css);
 
+
 .nav-container {
     background-color: var(--Grey100);
     padding: 10px 0px;
@@ -61,7 +62,7 @@
   }
   
   .nav-login-btn a {
-    font-size: var(--Large-400-fs);
+    font-size: var(--Medium-400-fs);
     font-weight: var(--regular);
     font-family: 'Source Sans Pro',sans-serif;
     text-decoration: none;

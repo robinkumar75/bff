@@ -1,7 +1,5 @@
 var swiper = new Swiper(".testimonial-slide-inner-sec", {
-  cssMode: true,
-  freeMode: true,
-  slidesPerView: 2.8,
+  slidesPerView: 2.5,
   spaceBetween: 30,
   pagination: {
     el: ".swiper-pagination",

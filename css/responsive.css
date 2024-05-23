@@ -1,0 +1,161 @@
+@media (max-width:1250px) {
+  .main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding: 80px;
+  }
+
+  .main-container .xl-width {
+    width: 100%;
+  }
+}
+
+/* 1400px  */
+@media (max-width: 1399px) {
+  .h1-heading {
+    font-size: var(--all-headings-font-size);
+    font-weight: var(--bold);
+    line-height: var(--all-headings-line-heigh);
+    color: var(--heading-color);
+    font-family: 'Source Serif Pro', serif;
+  }
+
+  .all-headings {
+    font-size: var(--medium-heading-fs);
+    font-weight: var(--bold);
+    line-height: var(--medium-heading-lh);
+    color: var(--heading-color);
+    font-family: 'Source Serif Pro', serif;
+  }
+
+  /* paragraph 24px 400 XLarge-400*/
+  .xlarge-p {
+    font-size: var(--Large-400-fs);
+    font-weight: var(--regular);
+    line-height: var(--Large-400-lh);
+    letter-spacing: var(--Large-400-ls);
+    color: var(--Sec_brown);
+    font-family: 'Source Sans Pro', sans-serif;
+  }
+
+}
+
+/* change font 640px; */
+
+@media (max-width: 600px) {
+  .h1-heading {
+    font-size: var(--XXLarge-400-fs);
+    font-weight: var(--bold);
+    line-height: var(--XXLarge-400-lh);
+    color: var(--heading-color);
+    font-family: 'Source Serif Pro', serif;
+  }
+
+  .all-headings {
+    font-size: var(--xl-heading-fs);
+    font-weight: var(--bold);
+    line-height: var(--xl-heading-lh);
+    color: var(--heading-color);
+    font-family: 'Source Serif Pro', serif;
+  }
+
+  /* paragraph 18px color:#7D5C4E*/
+  .medium-400 {
+    font-size: var(--XSmall-400-fs);
+    font-weight: var(--regular);
+    line-height: var(--XSmall-400-lh);
+    letter-spacing: var(--Medium-400-ls);
+    color: var(--Sec_brown);
+    font-family: 'Source Sans Pro', sans-serif;
+  }
+}
+
+
+
+/* header section */
+@media(max-width: 1300px) {
+  .home-header-sec-material{
+    width: 55%;
+  }
+  .home-header-image {
+    width: 40%;
+  }
+  .home-header-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+
+
+/* button 432px */
+@media(max-width: 1300px){
+  .xl-button a{
+    padding: 18px 0;
+    width: 300px;
+  }
+}
+
+/* testimonial code */
+@media (max-width:1440px){
+  .testimonial-sec{
+      padding: 80px 0px 40px 0px;
+    }
+    .testimonial-slides-sec{
+      padding-left: 80px;
+    }
+}
+@media (max-width:1250px) {
+  .testimonial-det-inner-sec {
+    height: 470px;
+    background-color: var(--NeroWhite);
+    padding: 30px;
+  }
+}
+
+/* How it works ? section */
+@media (max-width: 1300px){
+    .how-it-works-cards-cnt {
+      grid-template-columns: repeat(3, 1fr);
+  }
+  
+}
+
+@media (max-width: 1025px){
+  .how-it-works-cards-cnt {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+}
+
+/* Our Bowl Plans section */
+
+@media (max-width: 1300px){
+  .our-bowl-product-card-cont{
+    column-gap: 20px;
+  }
+  .our-bowl-prd{
+    width: 100%;
+    height: 367px;
+  }
+
+  .our-bo-pr-img{
+    width: 150px;
+    height: 150px;
+  }
+  .our-bo-pr-img img{
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/* Footer section */
+
+@media (max-width: 1300px){
+  .footer-inner-sec{
+    padding: 0;
+  }
+}

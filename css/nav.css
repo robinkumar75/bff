@@ -1,7 +1,7 @@
-@import url(style.css);
-
-
 .nav-container {
+    width: 100%;
+    padding: 100px;
+    height: 70px;
     background-color: var(--Grey100);
     padding: 10px 0px;
   }
@@ -71,4 +71,17 @@
     text-decoration: none;
     background: linear-gradient(90deg, #5D3E31 0%, #704B3B 24%, #855946 50%, #7D5C4E 100%);
     border-radius: 5px;
+  }
+
+
+  @media (max-width: 1300px){
+    .nav-container{
+      padding: 10px 20px;
+    }
+    .navbar .nav-links ul li {
+      margin-right: 0px;
+    }
+    .navbar .nav-links ul li a {
+      padding: 12px 14px;
+    }
   }

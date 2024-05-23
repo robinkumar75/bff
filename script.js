@@ -9,11 +9,25 @@ document.querySelectorAll(".button").forEach((button) => {
 
 // testimonial section
 var swiper = new Swiper(".testimonial-slide-inner-sec", {
-  slidesPerView: 2.5,
+  slidesPerView: 1,
   spaceBetween: 30,
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
+  },
+  breakpoints: {
+    640: {
+      slidesPerView: 1,
+      spaceBetween: 20,
+    },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 40,
+    },
+    1024: {
+      slidesPerView: 2.5,
+      spaceBetween: 30,
+    },
   },
 });
 
